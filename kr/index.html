@@ -137,19 +137,66 @@
 
 	   </header>
 
-      <div id="content" class="site-content header-not-frontpage">
-        <div class="container">
+      <div id="content" class="site-content header-not-frontpage mb-5">
+
+        <style>
+          .video-embed {
+            width:50%;
+          }
+          .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            box-shadow: rgb(51, 51, 51) 10px 10px 35px -10px;
+            border: 1px solid #ddd; margin: 2em 0;
+          }
+          .embed-container iframe,
+          .embed-container object,
+          .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          @media screen and (max-width: 760px) {
+            .video-embed {
+              width:90%;
+            }
+          }
+        </style>
+
+        <div class="container video-embed">
+
+          <div class="embed-container mx-auto mb-1">
+            <iframe src='https://www.youtube.com/embed/3P1CnWI62Ik?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+          </div>
+
           <div class="row">
           <!-- content : Start -->
 
+          <!-- Content : End -->
+          </div> <!-- .row -->
 
-            <!-- ...... Content Here ...... -->
+        </div> <!-- container -->
 
+        <div class="container video-embed">
 
+          <div class="embed-container mx-auto">
+            <iframe src='https://www.youtube.com/embed/SmTRaSg2fTQ?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+          </div>
+
+          <div class="row">
+          <!-- content : Start -->
 
           <!-- Content : End -->
           </div> <!-- .row -->
+
         </div> <!-- container -->
+
       </div> <!-- .site-content -->
 
       <div class="footer mt-2 bg-light shadow fixed-bottom" style="position:fixed; bottom:0; width:100%;">
