@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="robots" content="noindex, nofollow"> -->
     <link rel="shortcut icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
-    <title>K-Rhythm - www.k-rhythm.com</title>
-    <meta property="og:title" content="K-Rhythm - www.k-rhythm.com"/>
-    <meta property="og:description" content="K-Rhythm - www.k-rhythm.com"/>
+    <title>케이리듬(K-Rhythm) - www.k-rhythm.com</title>
+    <meta property="og:title" content="케이리듬(K-Rhythm) - www.k-rhythm.com"/>
+    <meta property="og:description" content="케이리듬(K-Rhythm) - www.k-rhythm.com"/>
     <meta property="og:url" content="https://www.k-rhythm.com/kr/"/>
     <meta property="og:image" content="./../../assets/img/XXXXXXXX-800x400.jpg"/>
     <meta property="og:site_name" content="K-Rhythm"/>
@@ -21,6 +21,36 @@
     <link rel="stylesheet" type="text/css" href="./../assets-layout/css/style.css">
     <script src="./../assets/js/jquery/3.2.1/jquery.min.js"></script>
     <script src="./../assets/js/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .video-embed {
+        width:50%;
+      }
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        box-shadow: rgb(51, 51, 51) 10px 10px 35px -10px;
+        border: 1px solid #ddd; margin: 2em 0;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 760px) {
+        .video-embed {
+          width:90%;
+        }
+      }
+    </style>
 
     <!-- Global site tag (gtag.js; K-RHYTHM.COM) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179026008-1"></script>
@@ -141,63 +171,47 @@
 
       <div id="content" class="site-content header-not-frontpage mb-5">
 
-        <style>
-          .video-embed {
-            width:50%;
-          }
-          .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            height: auto;
-            box-shadow: rgb(51, 51, 51) 10px 10px 35px -10px;
-            border: 1px solid #ddd; margin: 2em 0;
-          }
-          .embed-container iframe,
-          .embed-container object,
-          .embed-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
-          @media screen and (max-width: 760px) {
-            .video-embed {
-              width:90%;
-            }
-          }
-        </style>
+        <nav id="board-list-nav">
+          <div class="nav nav-tabs justify-content-center mb-3" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-board-list-01-tab" data-toggle="tab" href="#nav-board-list-01" role="tab" aria-controls="nav-board-list-01" aria-selected="true">범내려온다</a>
+            <a class="nav-item nav-link" id="nav-board-list-02-tab" data-toggle="tab" href="#nav-board-list-02" role="tab" aria-controls="nav-board-list-02" aria-selected="false">눈내리던날</a>
+          </div>
+        </nav>
 
-        <div class="container video-embed">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-board-list-01" role="tabpanel" aria-labelledby="nav-board-list-01-tab">
 
-          <div class="embed-container mx-auto mb-1">
-            <iframe src='https://www.youtube.com/embed/3P1CnWI62Ik?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+            <div class="container video-embed">
+
+              <div class="embed-container mx-auto mb-1">
+                <iframe src='https://www.youtube.com/embed/3P1CnWI62Ik?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+              </div>
+
+            </div> <!-- container -->
+
+            <div class="container video-embed">
+
+              <div class="embed-container mx-auto">
+                <iframe src='https://www.youtube.com/embed/SmTRaSg2fTQ?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+              </div>
+
+            </div> <!-- container -->
+
           </div>
 
-          <div class="row">
-          <!-- content : Start -->
+          <div class="tab-pane fade show" id="nav-board-list-02" role="tabpanel" aria-labelledby="nav-board-list-02-tab">
 
-          <!-- Content : End -->
-          </div> <!-- .row -->
+            <div class="container video-embed">
 
-        </div> <!-- container -->
+              <div class="embed-container mx-auto mb-1">
+                <iframe src='https://www.youtube.com/embed/Ex9NJFX3Tqg?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+              </div>
 
-        <div class="container video-embed">
+            </div> <!-- container -->
 
-          <div class="embed-container mx-auto">
-            <iframe src='https://www.youtube.com/embed/SmTRaSg2fTQ?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1' frameborder='0' allowfullscreen sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
           </div>
 
-          <div class="row">
-          <!-- content : Start -->
-
-          <!-- Content : End -->
-          </div> <!-- .row -->
-
-        </div> <!-- container -->
+        </div>
 
       </div> <!-- .site-content -->
 
